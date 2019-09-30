@@ -1,0 +1,89 @@
+{
+    "properWatches" : "Proper Watches",
+    "products" : [
+      {
+        "name" : "Tissot ",
+        "type" : "Leather",
+        "price" : 925,
+        "image" : "img/tissot.png",
+        "description" : "Made with care and genuine leather. It is mechanically powered and holds up to 80 hours of energy."
+      },
+      {
+        "name" : "G-Shock",
+        "type" : "Rubber",
+        "price" : 130,
+        "image" : "img/gshock.png",
+        "description" : "Great watch for outdoor activity, but still classy enough to integrate with your nice outfits. Made with resin band and is 100 meters water resistant."
+      },
+      {
+        "name" : "Citizen",
+        "type" : "Steel",
+        "price" : 300,
+        "image" : "img/citizenblack.png",
+        "description" : "Absolutely stunning in black. Stainless steel band with diamond accents inside the face."
+      },
+      {
+        "name" : "Gucci",
+        "type" : "Leather",
+        "price" : 1100,
+        "image" : "img/gucci.jpg",
+        "description" : "Sleek and stylish. Runs on Ronda quartz movement with a leather strap."
+      },
+      {
+        "name" : "Movado",
+        "type" : "Steel",
+        "price" : 895,
+        "image" : "img/movado.jpg",
+        "description" : "Flashy, but shows class and elegance. Uses Swiss quartz movement and glass is made from sapphire."
+      },
+      {
+        "name" : "Daniel Wellington",
+        "type" : "Leather",
+        "price" : 200,
+        "image" : "img/dw.png",
+        "description" : "Black and simple design. Utilizes Japanese quartz movement along with a leather band."
+      },
+      {
+        "name" : "Holzkern",
+        "type" : "Wood",
+        "price" : 279,
+        "image" : "img/wood.jpg",
+        "description" : "This vibrant and beautiful wooden watch is unique. Made of teak wood and stainless blue steel."
+      },
+      {
+        "name" : "Bulova",
+        "type" : "Steel ",
+        "price" : 415,
+        "image" : "img/bulova.jpeg",
+        "description" : "Classic Bulova watch. Gold stainless steel band with swarovski crystals around the face."
+      },
+      {
+        "name" : "MVMT",
+        "type" : "Leather",
+        "price" : 95,
+        "image" : "img/mvmt.jpg",
+        "description" : "Glass case made of hardened mineral crystal for enhanced durability."
+      },
+      {
+        "name" : "Seiko",
+        "type" : "Rubber",
+        "price" : 500,
+        "image" : "img/seiko.jpg",
+        "description" : "Made with rose gold plating. Chronograph and uses japanese quartz movement."
+      },
+      {
+        "name" : "Tag Heuer",
+        "type" : "Steel",
+        "price" : 1950,
+        "image" : "img/tag.jpg",
+        "description" : "Stay classy with this Tag Heuer. Uses Swiss quartz movement and dial is made of sapphire."
+      },
+      {
+        "name" : "Rolex",
+        "type" : "Steel",
+        "price" : 35000,
+        "image" : "img/greenrolex.webp",
+        "description" : "One of Conor McGregor's favorites. Classic stainless steel 18k gold. Uses automatic movement."
+      }
+    ]
+  }

@@ -1,0 +1,99 @@
+body, html {
+  height: 100%;
+  font-family: 'Alegreya Sans', sans-serif;
+}
+
+.btn {
+  transition: all 0.3s ease-in-out;
+  color: black;
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: #40C575;
+}
+
+@media (max-width: 768px) {
+  #header {
+      text-align: center;
+  }
+  #header img {
+      margin: 20% auto 0;
+  }
+  #who {
+      text-align: center;
+  }
+  #who img {
+      margin-top: 15%;
+  }
+  #footer {
+      text-align: center;
+  }
+}
+
+/* Navbar */
+
+.navbar {
+  background-color: #40C575;
+  border-bottom: 1px solid #dedede;
+  font-family: 'Alegreya Sans', sans-serif;
+  height: 80px;
+}
+
+.navbar .navbar-nav .nav-link {
+  color: #fff;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  color: #FF7900;
+}
+
+.navbar-toggler-icon {
+  color: #fff;
+}
+
+.navbar-brand {
+  height: 50px;
+  width: 50px;
+}
+
+/* HEADER */
+
+#header2 {
+  background-image: url('/img/conorsuit.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  color: #484848;
+  display: flex;
+  align-items: center;
+  padding: 450px 0 300px 0;
+}
+
+#header .img {
+  width: 80%;
+}
+
+/* Contact */
+
+#contact {
+  background-color: #f6f6f6;
+  padding: 5rem 0;
+}
+
+/* Footer */
+
+footer {
+  padding: 2rem 0;
+  background: #484848;
+  color: white;
+}
+
+footer a {
+  color: #40C575;
+}
+
+footer .fa {
+  padding: 0 3px;
+}

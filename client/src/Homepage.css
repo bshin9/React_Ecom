@@ -1,0 +1,171 @@
+body, html {
+    height: 100%;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+.btn {
+    transition: all 0.3s ease-in-out;
+    color: black;
+}
+
+.btn:hover {
+    color: #fff;
+    background-color: #40C575;
+}
+
+@media (max-width: 768px) {
+    #header {
+        text-align: center;
+    }
+    #header img {
+        margin: 20% auto 0;
+    }
+    #who {
+        text-align: center;
+    }
+    #who img {
+        margin-top: 15%;
+    }
+    #footer {
+        text-align: center;
+    }
+}
+
+/* Navbar */
+
+.navbar {
+    background-color: #40C575;
+    border-bottom: 1px solid #dedede;
+    font-family: 'Alegreya Sans', sans-serif;
+    height: 80px;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: #FF7900;
+}
+
+.navbar-toggler-icon {
+    color: #fff;
+}
+
+.navbar-brand {
+    height: 50px;
+    width: 50px;
+}
+
+/* HEADER */
+
+#header {
+    background-image: url('/img/watch.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    color: #484848;
+    display: flex;
+    align-items: center;
+    padding: 300px 0 100px 0;
+}
+
+#header .img {
+    padding: 0 0 20px 0;
+    width: 80%;
+}
+
+#header .header-right {
+    background-color: #fff;
+    border-radius: 5%;
+    height: 400px;
+}
+
+#header .fa {
+    margin: 5% 0;
+}
+
+.watchSlide {
+    height: 350px;
+    width: 350px;
+    object-fit: contain;
+}
+
+.fa-star {
+    color: gold;
+}
+
+/* Who */
+
+#who {
+    padding: 15rem 0;
+    background-color: #f6f6f6;
+}
+
+#who .btn-who {
+    background-color: #40C575;
+    color: #fff;
+    width: 50%;
+}
+
+#who .btn-who:hover {
+    background-color: transparent;
+    border: 1px solid #FF7900;
+    color: #FF7900;
+}
+
+#who .img-fluid {
+    height: 100%;
+    width: 100%;
+}
+
+/* Why */
+
+#why {
+    padding: 15rem 0;
+    background-color: white;
+}
+
+#why .fa {
+    color: #FF7900;
+    padding: 15px 0;
+}
+
+/* Customers */
+
+#customers {
+    padding: 5rem 0;
+    background-color: white;
+}
+
+#customers .carousel-indicators li {
+    background-color: #40C575;
+}
+
+#customers .carousel-inner {
+    margin-bottom: 50px;
+}
+
+#customers .carousel-indicators {
+    margin-bottom: -50px;
+}
+
+/* Footer */
+
+/* .footer {
+    padding: 2rem 0;
+    background: #484848;
+    color: white;
+} */
+
+.footer .list-inline-item {
+    color: #40C575;
+}
+
+.footer .fa {
+    padding: 0 3px;
+}
+#slider{
+    color:white;
+}

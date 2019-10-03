@@ -1,3 +1,4 @@
+var path = require('path');
 const router = require("express").Router();
 const mysql = require("mysql");
 require("dotenv").config();
@@ -24,6 +25,12 @@ router.use(function(req, res, next) {
   next();
 });
 
+router.get("/", (req, res) => {
+    // res.send(true);
+    console.log(' __dirname + "/public/" + "index1.html" - ',  __dirname + "../public/" + "index1.html" )
+    res.sendFile( path.resolve(__dirname + "/../client/public/" + "index.html" ));
+})
+
 // get products
 router.get("/products", (req, res) => {
   let sql =
@@ -31,6 +38,7 @@ router.get("/products", (req, res) => {
 
   connection.query(sql, function(err, result) {
     if (err) {
+      res.sendStatus(500);
       res.send(err);
       return;
     }

@@ -1,4 +1,5 @@
 import React from "react";
+import axios from "axios";
 
 // the point of this GetContact component is so that we don't have to hard code the comments section
 class GetContact extends React.Component {
@@ -37,19 +38,19 @@ class GetContact extends React.Component {
 
   deleteContact = () => {
     const { contact_id } = this.props;
-    // const url = "http://localhost:8000/api/deletecontact/";
+    const url = "http://localhost:8000/api/deletecontact/";
     // fetch(url).catch(error => console.log('BAD', error)).then(response => console.log('GOOD', response));
     // Used axios to call the api endpoint and then just retrieved the data from above to create a new contact
-    // axios
-    //   .delete("http://localhost:8000/api/deletecontact", { data:
-    //     {contact_id: contact_id}
-    //   })
-    //   .then(res => {
-    //     console.log("Passing");
-    //   })
-    //   .catch(err => {
-    //     console.log(err);
-    //   });
+    axios
+      .delete("http://localhost:8000/api/deletecontact", { data:
+        {contact_id: contact_id}
+      })
+      .then(res => {
+        console.log("Passing");
+      })
+      .catch(err => {
+        console.log(err);
+      });
   };
 
   render() {

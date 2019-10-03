@@ -39,6 +39,7 @@ class Contact extends React.Component {
     // fetch(url).catch(error => console.log('BAD', error)).then(response => console.log('GOOD', response));
     // Used axios to call the api endpoint and then just retrieved the data from above to create a new contact
     axios.post('http://localhost:8000/api/newcontact', {
+      // payload
        firstname:this.state.firstname,
        lastname:this.state.lastname,
        email:this.state.email,

@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import "../Homepage.css";
 
 // created Home class 
@@ -22,34 +23,10 @@ class Home extends React.Component {
                   make an informed decision before you buy anything. Sign up
                   today to get free emails from us that will update your
                   catalogue as newer watches are released!
-                </p>
-                <form>
-                  <fieldset className="form-group">
-                    <label className="sr-only">name</label>
-                    <input
-                      type="text"
-                      className="form-control form-control-sm"
-                      id="firstname"
-                      placeholder="First Name"
-                      onChange={this.updateFirstname}
-                    />
-                  </fieldset>
-                  <fieldset className="form-group">
-                    <input
-                      type="email"
-                      className="form-control form-control-sm"
-                      id="email"
-                      placeholder="Email"
-                      onChange={this.updateEmail}
-                    />
-                  </fieldset>
-                  <button
-                    onClick={this.createContact}
-                    type="button"
-                    className="btn btn-outline-info btn-block" id="btn">
-                    Yes I Want Free Updates!
-                  </button>
-                </form>
+                </p> 
+                <NavLink to="/products" className="btn btn-outline-info btn-block" id="btn">
+                Check Out Our Watches!
+              </NavLink>
               </div>
             </div>
           </div>

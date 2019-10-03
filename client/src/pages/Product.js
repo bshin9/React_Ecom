@@ -9,7 +9,7 @@ class Product extends React.Component {
     };
   // using a componentDidMount here to retrieve my products from my endpoint
   componentDidMount() {
-    const url = "http://localhost:8000/api/products" ;
+    const url = "http://localhost:8000/api/products";
     fetch(url)
     .then((response) => {
       return response.json();
@@ -22,6 +22,7 @@ class Product extends React.Component {
     });
   }
 
+  
   getProducts = () => {
     const url = "http://localhost:8000/api/products" ;
     fetch(url)

@@ -9,11 +9,14 @@ class Product extends React.Component {
     };
   // using a componentDidMount here to retrieve my products from my endpoint
   componentDidMount() {
+    // fetching the products
     const url = "http://localhost:8000/api/products";
     fetch(url)
+    // want to turn into an json object
     .then((response) => {
       return response.json();
     })
+    // change the products state and retrieving the data of products
       .then((data) => {
         this.setState({products:data})
       })
@@ -22,7 +25,6 @@ class Product extends React.Component {
     });
   }
 
-  
   getProducts = () => {
     const url = "http://localhost:8000/api/products" ;
     fetch(url)
@@ -37,8 +39,8 @@ class Product extends React.Component {
     });
   }
 
+  // filter function by category
   getSelectedProducts = (e) => {
-    // change to fetch instead of axios (differnt code all together)
     const url = "http://localhost:8000/api/productfilter/" + e.target.value;    
     fetch(url)
     .then((response) => {
@@ -52,6 +54,7 @@ class Product extends React.Component {
     });
   }
 
+  // filter function by prices
   getSelectedPrices = (low, high) => {
     const url = "http://localhost:8000/api/pricefilter/" + low + "/" + high;
     fetch(url)

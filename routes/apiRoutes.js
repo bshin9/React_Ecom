@@ -15,6 +15,7 @@ const connection = mysql.createConnection({
 
 connection.connect();
 
+// using a middleware to connect frontend to backend
 router.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "http://localhost:3000");
   res.header(
@@ -25,9 +26,8 @@ router.use(function(req, res, next) {
   next();
 });
 
+// we want to get the home page and make sure it's running
 router.get("/", (req, res) => {
-    // res.send(true);
-    console.log(' __dirname + "/public/" + "index1.html" - ',  __dirname + "../public/" + "index1.html" )
     res.sendFile( path.resolve(__dirname + "/../client/public/" + "index.html" ));
 })
 

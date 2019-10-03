@@ -35,8 +35,6 @@ class Contact extends React.Component {
   }
 
   createContact = () => {
-    // const url = "http://localhost:8000/api/newcontact/";
-    // fetch(url).catch(error => console.log('BAD', error)).then(response => console.log('GOOD', response));
     // Used axios to call the api endpoint and then just retrieved the data from above to create a new contact
     axios.post('http://localhost:8000/api/newcontact', {
       // payload
@@ -75,7 +73,7 @@ class Contact extends React.Component {
             </div>
             <div className="row">
               <div className="col-md-8 mx-auto">
-                <form id="name_form" onSubmit={this.refreshPage}>
+                <form id="name_form">
                 <fieldset className="form-group">
                     <input
                       type="text"

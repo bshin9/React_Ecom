@@ -8,6 +8,9 @@ import Footer from "./components/Footer";
 import "./Productpage.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
+
+// Using the router to route the Home, Product, and Contact pages together
+// Calling the Navbar and Footer so we don't have to repeat in the other pages
 class App extends React.Component {
   render() {
     return (

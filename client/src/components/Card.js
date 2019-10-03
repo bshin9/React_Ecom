@@ -1,13 +1,13 @@
 import React from 'react';
 
-
+// Card component that is being called in the products to loop through
 const Card = ({ name, price, image, type, description }) => {
     return (
-          <div id="products">
-            <div className="row">
-              <div className="col-md-3 col-sm-6">
+          <div className="card-main">
+            <div className="card-row">
+              <div className="card-container">
                 <div className="item-img">
-                  <a href="#a"><img src={image} className="card-img-top img-fluid img-product" alt="properwatches" /></a>
+                  <a href="#a"><img src={image} className="" alt="properwatches" /></a>
                   <div className="img-overlay" />
                 </div>
                 <div className="card-body">

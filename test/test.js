@@ -1,23 +1,37 @@
-var expect  = require('chai').expect;
+var chai = require('chai')
+var expect  = chai.expect;
+var chaiHttp = require('chai-http')
 var request = require('request');
 
-it('should retrieve all the information from the products JSON', function(done) {
-    request('http://localhost:8000/api/products', (error, response, body)=>{
-        expect(response.statusCode).to.equal(200)
-        done()
-    })
-});
+var app = require('../routes/apiRoutes');
 
-it('should return the correct product under the filter set by user', function(done) {
-    request('http://localhost:8000/api/productfilter', (error, response, body)=>{
-        expect(response.statusCode).to.equal(200)
-        done()
+chai.use(chaiHttp);
+
+
+describe('tests for "/" api endpoint', () => {
+    it("/ should send back 200 status code", (done) => {
+        chai.request(app)
+        .get('/api/products/')
+        .end((error, response) => {
+            console.log('error - ',error)
+            console.log('response -', response)
+            expect(response.body.length > 0).equal(true)
+            done()
+        })
     })
-});
- 
-it('should retrieve the contact information', function(done) {
-    request('http://localhost:8000/api/contacts', (error, response, body) => {
-        expect(response.statusCode).to.equal(200)
-        done()
+})
+
+describe('tests for "/" api endpoint', () => {
+    it("/ should send back 200 status code", (done) => {
+        chai.request(app)
+        .get('api/contacts')
+        .end((error, response) => {
+            console.log(' -', true === false)
+            expect(true === false)
+            done()
+        })
+        expect(true == false)
     })
-});
+})
+
+module.exports = app;

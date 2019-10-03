@@ -16,14 +16,14 @@ INSERT INTO Products (product_name, category, product_description, image)
 	('G-Shock', 'Rubber', 'Great watch for outdoor activity, but still classy enough to integrate with your nice outfits. Made with resin band and is 100 meters water resistant.', 'img/gshock.png'),
 	('Citizen', 'Steel', 'Absolutely stunning in black. Stainless steel band with diamond accents inside the face.', 'img/citizenblack.png'),
 	('Gucci', 'Leather', 'Sleek and stylish. Runs on Ronda quartz movement with a leather strap.', 'img/gucci.jpg'),
-	('Movado', 'Steel', 'Flashy, but shows class and elegance. Uses Swiss quartz movement and glass is made from sapphire.', 'img/movado.jpg'),
+	('Movado', 'Gold', 'Flashy, but shows class and elegance. Uses Swiss quartz movement and glass is made from sapphire.', 'img/movado.jpg'),
 	('Daniel Wellington', 'Leather', 'Black and simple design. Utilizes Japanese quartz movement along with a leather band.', 'img/dw.png'),
 	('Holzkern', 'Wood', 'This vibrant and beautiful wooden watch is unique. Made of teak wood and stainless blue steel.', 'img/wood.jpg'),
-	('Bulova', 'Steel', 'Classic Bulova watch. Gold stainless steel band with swarovski crystals around the face.', 'img/bulova.jpeg'),
+	('Bulova', 'Gold', 'Classic Bulova watch. Gold stainless steel band with swarovski crystals around the face.', 'img/bulova.jpeg'),
 	('MVMT', 'Leather', 'Glass case made of hardened mineral crystal for enhanced durability.', 'img/mvmt.jpg'),
 	('Seiko', 'Rubber', 'Made with rose gold plating. Chronograph and uses japanese quartz movement.', 'img/seiko.jpg'),
 	('Tag Heuer', 'Steel', 'Stay classy with this Tag Heuer. Uses Swiss quartz movement and dial is made of sapphire.', 'img/tag.jpg'),
-	('Rolex', 'Steel', 'One of Conor McGregor\'s favorites. Classic stainless steel 18k gold. Uses automatic movement.', 'img/greenrolex.webp')
+	('Rolex', 'Gold', 'One of Conor McGregor\'s favorites. Classic stainless steel 18k gold. Uses automatic movement.', 'img/greenrolex.webp')
     ;
     
 CREATE TABLE Prices (
@@ -53,8 +53,7 @@ CREATE TABLE Contacts (
     email VARCHAR(255),
     user_name VARCHAR(15),
 	message VARCHAR(255),
-    contact_id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-	FOREIGN KEY (contact_id) REFERENCES Products(product_id)
+    contact_id INT PRIMARY KEY NOT NULL AUTO_INCREMENT
 );
 INSERT INTO Contacts (firstname, lastname, email, user_name, message)
 	VALUES
@@ -69,4 +68,3 @@ INSERT INTO Contacts (firstname, lastname, email, user_name, message)
 	('Nate', 'Diaz', 'realchamp@yahoo.com', 'diaz229', 'Surprise surprise, told you I would buy one'),
 	('Max', 'Holloway', 'blessedmma@gmail.com', 'blessedholloway', 'It is what it is, proper watches are what it is')
 	;
-SELECT * FROM Products;

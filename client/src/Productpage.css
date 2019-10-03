@@ -1,52 +1,53 @@
-body, html {
-    height: 100%;
-    font-family: 'Alegreya Sans', sans-serif;
+body,
+html {
+  height: 100%;
+  font-family: "Alegreya Sans", sans-serif;
 }
 
 @media (max-width: 768px) {
-    #header {
-        text-align: center;
-    }
+  #header {
+    text-align: center;
+  }
 
-    #header img {
-        margin: 20% auto 0;
-    }
+  #header img {
+    margin: 20% auto 0;
+  }
 
-    #footer {
-        text-align: center;
-    }
+  #footer {
+    text-align: center;
+  }
 }
 
 /* Navbar */
 
 .navbar {
-    background-color: #40C575;
-    border-bottom: 1px solid #dedede;
-    font-family: 'Alegreya Sans', sans-serif;
-    height: 80px;
+  background-color: #40c575;
+  border-bottom: 1px solid #dedede;
+  font-family: "Alegreya Sans", sans-serif;
+  height: 80px;
 }
 
 .navbar .navbar-nav .nav-link {
-    color: #fff;
+  color: #fff;
 }
 
 .navbar .navbar-nav .nav-link:hover {
-    color: #FF7900;
+  color: #ff7900;
 }
 
 .navbar-toggler-icon {
-    color: #fff;
+  color: #fff;
 }
 
 .navbar-brand {
-    height: 50px;
-    width: 50px;
+  height: 50px;
+  width: 50px;
 }
 
 /* Header */
 
 #header1 {
-  background-image: url('/img/conorwalk.jpg');
+  background-image: url("/img/conorwalk.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -58,8 +59,8 @@ body, html {
 }
 
 #header img {
-    padding: 0 0 20px 0;
-    width: 80%;
+  padding: 0 0 20px 0;
+  width: 80%;
 }
 .img-product img {
   height: 300px;
@@ -67,31 +68,29 @@ body, html {
 }
 /* Style the buttons */
 .btn {
-    border: none;
-    outline: none;
-    padding: 12px 16px;
-    background-color: #f1f1f1;
-    cursor: pointer;
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
 }
 
-/* Add a light grey background on mouse-over */
 .btn:hover {
-    background-color: #40C575;
-    color: white;
+  background-color: #40c575;
+  color: white;
 }
 
-/* Add a dark background to the active button */
 .btn.active {
-    background-color: #FF7900;
-    color: white;
+  background-color: #ff7900;
+  color: white;
 }
 
 .filterDiv {
-    display: none;
+  display: none;
 }
 
 .show {
-    display: block;
+  display: block;
 }
 
 /* Product */
@@ -103,68 +102,87 @@ img {
 }
 
 .logo {
-    width: 50px;
-    height: 50px;
+  width: 50px;
+  height: 50px;
 }
 
 #products {
-    padding: 5rem 0;
+  padding: 5rem 0;
 }
 
 #products .item-img {
-    position: relative;
-    object-fit: contain;
+  position: relative;
+  object-fit: contain;
 }
 
 #products .item-img .img-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, .5);
-    width: 100%;
-    height: 100%;
-    background-position: center center;
-    opacity: 0;
-    z-index: 0;
-    transition: all 0.4s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  opacity: 0;
+  z-index: 0;
+  transition: all 0.4s ease-in-out;
 }
 
 #products .item-img .img-overlay:hover {
-    opacity: 1;
-    z-index: 1;
+  opacity: 1;
+  z-index: 1;
 }
 
 .strong {
-    font-size: 30px;
-    text-emphasis: bold;
+  font-size: 30px;
+  text-emphasis: bold;
 }
 
 .card-img-top {
-    height: 350px;
-    width: 400px;
-    object-fit: contain;
+  height: 350px;
+  width: 400px;
+  object-fit: contain;
 }
 
 .card-body {
-    height: 300px;
+  height: 25vh;
+  width: 30vw;
+}
+
+.card-container {
+  width: 100%;
+}
+
+.card-main {
+  width: 30vw;
+  margin: auto;
+  margin-top: 50px;
+  -webkit-box-shadow: -12px -6px 21px 4px rgba(64,197,117,0.97), 11px 11px 31px 3px #FF7900, 50px 50px 50px 50px rgba(255,255,255,0.25); 
+  box-shadow: -12px -6px 21px 4px rgba(64,197,117,0.97), 11px 11px 31px 3px #FF7900, 50px 50px 50px 50px rgba(255,255,255,0.25);
+  border-radius: 10px;
+}
+
+.flex-items {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /* Footer */
 
 #footer {
-    padding: 2rem 0;
-    background: #484848;
-    color: white;
+  padding: 2rem 0;
+  background: #484848;
+  color: white;
 }
 
 #footer a {
-    color: #40C575;
+  color: #40c575;
 }
 
 #footer .fa {
-    padding: 0 3px;
+  padding: 0 3px;
 }
 
 .show {
-    display: block;
+  display: block;
 }

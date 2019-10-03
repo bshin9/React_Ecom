@@ -1,5 +1,6 @@
 import React from "react";
 
+// Created separate Footer component so we can clean up some code in the Pages folder
 const Footer = () => {
   return (
     <>

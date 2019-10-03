@@ -1,13 +1,16 @@
 import React from "react";
 import "../Homepage.css";
 
+// created Home class 
 class Home extends React.Component {
+
   render() {
     return (
       <div className="App">
         {/* HEADER */}
         <section id="header">
-        <a name="header"></a>
+        {/* had to create anchor tag with name of header so react router could find it */}
+        <a href="#a" name="header"></a>
           <div className="container text-center">
             <div className="row">
               <div className="col-md-6 header-right hidden-sm-down">
@@ -25,23 +28,26 @@ class Home extends React.Component {
                     <label className="sr-only">name</label>
                     <input
                       type="text"
-                      className="form-control"
-                      placeholder="Name"
+                      className="form-control form-control-sm"
+                      id="firstname"
+                      placeholder="First Name"
+                      onChange={this.updateFirstname}
                     />
                   </fieldset>
                   <fieldset className="form-group">
-                    <label className="sr-only">name</label>
                     <input
                       type="email"
-                      className="form-control"
+                      className="form-control form-control-sm"
+                      id="email"
                       placeholder="Email"
+                      onChange={this.updateEmail}
                     />
                   </fieldset>
                   <button
-                    type="submit"
-                    className="btn btn-outline-info btn-block"
-                    href="#a">
-                    Yes, I Want Free Updates!
+                    onClick={this.createContact}
+                    type="button"
+                    className="btn btn-outline-info btn-block" id="btn">
+                    Yes I Want Free Updates!
                   </button>
                 </form>
               </div>
@@ -146,12 +152,12 @@ class Home extends React.Component {
         </section>
         {/* Who we are */}
         <section id="who">
-            <a name="who"></a>
+            <a href name="who"></a>
           <div className="container">
             <div className="row">
               <div className="col-md-6">
                 <h2>Who Are We?</h2>
-                <hr text-align="left" width="50%" />
+                <hr text-align="center" width="50%" />
                 <p className="lead">
                   We were created and funded by UFC Lightweight and
                   Featherweight Champion, Conor McGregor. We are based off in
@@ -177,7 +183,7 @@ class Home extends React.Component {
         </section>
         {/* Why */}
         <section id="why">
-        <a name="why"></a>
+        <a href name="why">WHY</a>
           <div className="container text-center">
             <div className="row">
               <div className="col-md-12 wow fadeIn">

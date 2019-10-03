@@ -183,7 +183,7 @@ class Home extends React.Component {
         </section>
         {/* Why */}
         <section id="why">
-        <a href name="why">WHY</a>
+        <a href name="why"></a>
           <div className="container text-center">
             <div className="row">
               <div className="col-md-12 wow fadeIn">

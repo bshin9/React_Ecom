@@ -1,5 +1,4 @@
 import React from "react";
-import axios from "axios";
 import Card from "../components/Card";
 
 // Create a Product class
@@ -10,56 +9,60 @@ class Product extends React.Component {
     };
   // using a componentDidMount here to retrieve my products from my endpoint
   componentDidMount() {
-    const url = 'http://localhost:8000/api/products';
-    fetch(url).catch(error => console.log('BAD', error)).then(response => console.log('GOOD', response));
-    // axios
-    //   .get("/api/products")
-    //   .then(res => {
-    //     this.setState({ products: res.data }, () =>
-    //       console.log(this.state.products)
-    //     );
-    //     console.log(this.state.products);
-    //   })
-    //   .catch(err => {
-    //     console.log(err);
-    //   });
+    const url = "http://localhost:8000/api/products" ;
+    fetch(url)
+    .then((response) => {
+      return response.json();
+    })
+      .then((data) => {
+        this.setState({products:data})
+      })
+    .catch((error) => {
+      console.log('BAD', error)
+    });
   }
 
   getProducts = () => {
     const url = "http://localhost:8000/api/products" ;
-    fetch(url).catch(error => console.log('BAD', error)).then(response => console.log('GOOD', response));
-    // axios.get("http://localhost:8000/api/products")
-    // .then(res => {
-    //   this.setState({ products: res.data })
-    // })
-    // .catch(err => {
-    //   console.log(err);
-    // });
+    fetch(url)
+    .then((response) => {
+      return response.json();
+    })
+      .then((data) => {
+        this.setState({products:data})
+      })
+    .catch((error) => {
+      console.log('BAD', error)
+    });
   }
 
   getSelectedProducts = (e) => {
     // change to fetch instead of axios (differnt code all together)
-    const url = "http://localhost:8000/api/productfilter/" + e.target.value;
-    fetch(url).catch(error => console.log('BAD', error)).then(response => console.log('GOOD', response));
-    // axios.get("http://localhost:8000/api/productfilter/" + e.target.value)
-    // .then(res => {
-    //   this.setState({ products: res.data });
-    // })
-    // .catch(err => {
-    //   console.log(err);
-    // });
+    const url = "http://localhost:8000/api/productfilter/" + e.target.value;    
+    fetch(url)
+    .then((response) => {
+      return response.json();
+    })
+      .then((data) => {
+        this.setState({products:data})
+      })
+    .catch((error) => {
+      console.log('BAD', error)
+    });
   }
 
   getSelectedPrices = (low, high) => {
     const url = "http://localhost:8000/api/pricefilter/" + low + "/" + high;
-    fetch(url).catch(error => console.log('BAD', error)).then(response => console.log('GOOD', response));
-    // axios.get("http://localhost:8000/api/pricefilter/" + low + "/" + high)
-    // .then(res => {
-    //   this.setState({ products: res.data });
-    // })
-    // .catch(err => {
-    //   console.log(err);
-    // });
+    fetch(url)
+    .then((response) => {
+      return response.json();
+    })
+      .then((data) => {
+        this.setState({products:data})
+      })
+    .catch((error) => {
+      console.log('BAD', error)
+    });
   }
 
   render() {

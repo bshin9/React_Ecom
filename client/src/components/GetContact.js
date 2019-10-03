@@ -1,5 +1,4 @@
 import React from "react";
-import axios from "axios";
 
 // the point of this GetContact component is so that we don't have to hard code the comments section
 class GetContact extends React.Component {
@@ -10,23 +9,29 @@ class GetContact extends React.Component {
     email: "",
     user_name: "",
     message: "",
-    contact_id: ""
+    contact_id: "",
+    old_message: ""
   };
 
   updateMessage = () => {
-    const { message, contact_id } = this.props;
-    // const url = "http://localhost:8000/api/updatecontact/";
-    // fetch(url).catch(error => console.log('BAD', error)).then(response => console.log('GOOD', response));
-    // Used axios to call the api endpoint and then just retrieved the data from above to create a new contact
-    axios
-      .post("http://localhost:8000/api/updatecontact", { data:
-        {message: message, contact_id: contact_id}
-      })
-      .then(res => {
-        console.log("Passing");
-      })
-      .catch(err => {
-        console.log(err);
+    const url = "http://localhost:8000/api/updatecontact";
+      let message = 'hello';
+      let contact_id = 10;
+      fetch(url,
+        {
+          method: "POST",
+          mode: 'no-cors',
+          headers:{
+                  'Accept':'application/json',
+                  'Content-Type': 'application/json'
+                },
+                body:JSON.stringify({message: message, contact_id: contact_id})
+        }) 
+        .then((data) => {
+          console.log("Passing");
+        })
+      .catch((error) => {
+        console.log('BAD', error)
       });
   };
 
@@ -35,16 +40,16 @@ class GetContact extends React.Component {
     // const url = "http://localhost:8000/api/deletecontact/";
     // fetch(url).catch(error => console.log('BAD', error)).then(response => console.log('GOOD', response));
     // Used axios to call the api endpoint and then just retrieved the data from above to create a new contact
-    axios
-      .delete("http://localhost:8000/api/deletecontact", { data:
-        {contact_id: contact_id}
-      })
-      .then(res => {
-        console.log("Passing");
-      })
-      .catch(err => {
-        console.log(err);
-      });
+    // axios
+    //   .delete("http://localhost:8000/api/deletecontact", { data:
+    //     {contact_id: contact_id}
+    //   })
+    //   .then(res => {
+    //     console.log("Passing");
+    //   })
+    //   .catch(err => {
+    //     console.log(err);
+    //   });
   };
 
   render() {

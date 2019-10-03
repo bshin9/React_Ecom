@@ -1,5 +1,4 @@
 import React from "react";
-import axios from "axios";
 import GetContact from "./GetContact";
 
 class CommentBox extends React.Component {
@@ -8,18 +7,17 @@ class CommentBox extends React.Component {
   };
 
   componentDidMount() {
-    // const url = "http://localhost:8000/api/contacts/";
-    // fetch(url).catch(error => console.log('BAD', error)).then(response => console.log('GOOD', response));
-    axios
-      .get("/api/contacts")
-      .then(res => {
-        this.setState({ contacts: res.data }, () =>
-          console.log(this.state.contacts)
-        );
+    const url = "http://localhost:8000/api/contacts";
+    fetch(url)
+    .then((response) => {
+      return response.json();
+    })
+      .then((data) => {
+        this.setState({contacts:data})
       })
-      .catch(err => {
-        console.log(err);
-      });
+    .catch((error) => {
+      console.log('BAD', error)
+    });
   }
   // We want to map through the contacts using state just like how we did the products
   // We use this so that we can call GetContact

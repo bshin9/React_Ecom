@@ -1,7 +1,7 @@
+require("dotenv").config();
 var path = require('path');
 const router = require("express").Router();
 const mysql = require("mysql");
-require("dotenv").config();
 const bodyParser = require("body-parser");
 router.use(bodyParser.urlencoded({ extended: true }));
 router.use(bodyParser.json());

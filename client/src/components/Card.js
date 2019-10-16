@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Card component that is being called in the products to loop through
-const Card = ({ name, price, image, type, description }) => {
+const Card = ({ name, price, image, description }) => {
     return (
           <div className="card-main">
             <div className="card-row">
@@ -13,7 +13,7 @@ const Card = ({ name, price, image, type, description }) => {
                 <div className="card-body">
                   <h2 className="strong">{name} ${price}</h2>
                   <p className="card-text">{description}</p>
-                  <p>{type}</p>
+                  <button>Buy</button>
                 </div>
               </div>
             </div>

@@ -1,18 +1,6 @@
-.body, html {
+.body {
     height: 100%;
-    font-family: 'Alegreya Sans', sans-serif;
-}
-
-#btn {
-    transition: all 0.3s ease-in-out;
-    background-color: #fff;
-    color: #40C575;
-    border-color: #40C575;
-}
-
-#btn:hover {
-    background-color: #40C575;
-    color: #fff;
+    font-family: cursive;
 }
 
 @media (max-width: 768px) {
@@ -68,21 +56,40 @@
     padding: 300px 0 100px 0;
 }
 
-#header .img {
-    padding: 0 0 20px 0;
-    width: 80%;
+.properHeader {
+    margin-top: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 #header .header-right {
+    margin: 30px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.6;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
     background-color: #fff;
     border-radius: 5%;
     height: 320px;
+}
+
+#header .header-right:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=100);
 }
 
 #header .fa {
     margin: 5% 0;
 }
 
+a span {
+    height: 1px;
+    width: 1px;
+    position: absolute;
+    overflow: hidden;
+    top: -10px;
+}
+
+/* Slider CSS */
 .watchSlide {
     height: 350px;
     width: 350px;
@@ -121,6 +128,10 @@
     width: 100%;
 }
 
+.alignTxt {
+    text-align: center;
+}
+
 /* Why */
 
 #why {
@@ -129,7 +140,7 @@
 }
 
 #why .fa {
-    color: #FF7900;
+    color: #40C575;
     padding: 15px 0;
 }
 
@@ -151,20 +162,3 @@
 #customers .carousel-indicators {
     margin-bottom: -50px;
 }
-
-/* Footer */
-
-.footer {
-    padding: 2rem 0;
-    background: #484848;
-    color: white;
-}
-
-.footer .list-inline-item {
-    color: #40C575;
-}
-
-.footer .fa {
-    padding: 0 3px;
-}
-

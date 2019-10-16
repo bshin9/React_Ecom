@@ -85,44 +85,44 @@ class Product extends React.Component {
               <div className="col-md-12 text-center">
                 <h2>Strut Out In Our Proper Watches</h2>
                 <hr text-align="left" width="50%" />
-                <p>To be a champ you have to look like one</p>
+                <p className="productTxt">To be a champ you have to look like one</p>
               </div>
             </div>
             {/* Filter */}
             <div id="myBtnContainer">
-              <button className="btn active" onClick={this.getProducts}>
+              <button className="filterBtn" onClick={this.getProducts}>
                 Show all
               </button>
-              <button className="btn" value="Rubber" onClick={this.getSelectedProducts}>
+              <button className="filterBtn" value="Rubber" onClick={this.getSelectedProducts}>
                 Rubber
               </button>
-              <button className="btn" value="Wood" onClick={this.getSelectedProducts}>
+              <button className="filterBtn" value="Wood" onClick={this.getSelectedProducts}>
                 Wood
               </button>
-              <button className="btn" value="Leather" onClick={this.getSelectedProducts}>
+              <button className="filterBtn" value="Leather" onClick={this.getSelectedProducts}>
                 Leather
               </button>
-              <button className="btn" value="Steel" onClick={this.getSelectedProducts}>
+              <button className="filterBtn" value="Steel" onClick={this.getSelectedProducts}>
                 Steel
               </button>
-              <button className="btn" value="Gold" onClick={this.getSelectedProducts}>
+              <button className="filterBtn" value="Gold" onClick={this.getSelectedProducts}>
                 Gold
               </button>
             </div>
-            <div id="myBtnContainer">
-              <button className="btn active" onClick={this.getProducts}>
+            <div id="myfilterBtnContainer">
+              <button className="filterBtn" onClick={this.getProducts}>
                 All Prices
               </button>
-              <button className="btn" value="199" onClick={() => this.getSelectedPrices(0, 199)}>
+              <button className="filterBtn" onClick={() => this.getSelectedPrices(0, 199)}>
                 $0-$199
               </button>
-              <button className="btn" value="399" onClick={() => this.getSelectedPrices(200, 399)}>
+              <button className="filterBtn" onClick={() => this.getSelectedPrices(200, 399)}>
                 $200-$399
               </button>
-              <button className="btn" value="599" onClick={() => this.getSelectedPrices(400, 599)}>
+              <button className="filterBtn" onClick={() => this.getSelectedPrices(400, 599)}>
                 $400-$599
               </button>
-              <button className="btn" value="800" onClick={() => this.getSelectedPrices(600, 40000)}>
+              <button className="filterBtn" onClick={() => this.getSelectedPrices(600, 40000)}>
                 $600-$40,000
               </button>
             </div>
@@ -138,6 +138,7 @@ class Product extends React.Component {
                     price={product.price}
                     description={product.product_description}
                     image={product.image}
+                    buy={product.buy}
                   />
                 ))}
             </div>

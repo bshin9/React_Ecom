@@ -1,4 +1,5 @@
 import React from "react";
+import "../Footer.css";
 
 // Created separate Footer component so we can clean up some code in the Pages folder
 const Footer = () => {
@@ -15,27 +16,27 @@ const Footer = () => {
               </p>
               <ul className="list-inline">
                 <li className="list-inline-item">
-                  <a href="https://www.facebook.com/">
+                  <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
                     <i className="fa fa-facebook" />
                   </a>
                 </li>
                 <li className="list-inline-item">
-                  <a href="https://www.twitter.com">
+                  <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
                     <i className="fa fa-twitter" />
                   </a>
                 </li>
                 <li className="list-inline-item">
-                  <a href="https://www.instagram.com">
+                  <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
                     <i className="fa fa-instagram" />
                   </a>
                 </li>
                 <li className="list-inline-item">
-                  <a href="https://www.pinterest.com">
+                  <a href="https://www.pinterest.com" target="_blank" rel="noopener noreferrer">
                     <i className="fa fa-pinterest" />
                   </a>
                 </li>
                 <li className="list-inline-item">
-                  <a href="https://aboutme.google.com/">
+                  <a href="https://aboutme.google.com/" target="_blank" rel="noopener noreferrer">
                     <i className="fa fa-google-plus" />
                   </a>
                 </li>

@@ -1,5 +1,5 @@
 import React from "react";
-import GetContact from "./GetContact";
+import EditComment from "./EditComment";
 
 class CommentBox extends React.Component {
   state = {
@@ -26,7 +26,7 @@ class CommentBox extends React.Component {
       <div className="getContact">
         {this.state.contacts &&
           this.state.contacts.map(contacts => (
-            <GetContact
+            <EditComment
               contact_id={contacts.contact_id}
               user_name={contacts.user_name}
               message={contacts.message}

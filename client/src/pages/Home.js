@@ -11,11 +11,11 @@ class Home extends React.Component {
         {/* HEADER */}
         <section id="header">
         {/* had to create anchor tag with name of header so react router could find it */}
-        <a href="#a" name="header"></a>
+        <a href="#a" name="header"><span>h</span></a>
           <div className="container text-center">
             <div className="row">
               <div className="col-md-6 header-right hidden-sm-down">
-                <h2>WELCOME TO PROPER WATCH!</h2>
+                <h2 className="properHeader">WELCOME TO PROPER WATCH!</h2>
                 <p className="lead">
                   Proper Watch is where you can find a variety of classy and
                   stylistic watches ranging from all different price ranges. We
@@ -129,11 +129,11 @@ class Home extends React.Component {
         </section>
         {/* Who we are */}
         <section id="who">
-            <a href name="who"></a>
+            <a href name="who"><span>h</span></a>
           <div className="container">
             <div className="row">
               <div className="col-md-6">
-                <h2>Who Are We?</h2>
+                <h2 className="alignTxt">Who Are We?</h2>
                 <hr text-align="center" width="50%" />
                 <p className="lead">
                   We were created and funded by UFC Lightweight and
@@ -160,11 +160,11 @@ class Home extends React.Component {
         </section>
         {/* Why */}
         <section id="why">
-        <a href name="why"></a>
+        <a href name="why"><span>h</span></a>
           <div className="container text-center">
             <div className="row">
               <div className="col-md-12 wow fadeIn">
-                <h2>Why Do We Do This?</h2>
+                <h2 className="alignTxt">Why Do We Do This?</h2>
                 <hr width="30%" />
                 <p />
               </div>
@@ -172,7 +172,7 @@ class Home extends React.Component {
             <div className="row">
               <div className="col">
                 <i className="fa fa-thumbs-o-up fa-3x" />
-                <h3>Authenticity</h3>
+                <h3 className="alignTxt">Authenticity</h3>
                 <p>
                   We have one goal and it's to bring you the best quality of
                   service we can provide. We were inspired by the long list of

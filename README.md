@@ -10,6 +10,14 @@ This project is done in React and the front end is entirely based off of React c
 
 The back end of the project was done using Node JS, mySql, and then linking these together within the React App.
 
+## USAGE
+
+```
+start by using `npm install` inside the folder
+then run the app by `npm start`
+the app should start running and you should be good to go
+```
+
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.

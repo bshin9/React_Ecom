@@ -12,11 +12,9 @@ The back end of the project was done using Node JS, mySql, and then linking thes
 
 ## USAGE
 
-```bash
 start by using `npm install` inside the folder
 then run the app by `npm start`
 the app should start running and you should be good to go
-```
 
 
 ## Contributing

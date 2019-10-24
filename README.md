@@ -12,11 +12,19 @@ The back end of the project was done using Node JS, mySql, and then linking thes
 
 ## USAGE
 
-```bash
-start by using `npm install` inside the folder, this will create the node modules you need to run the app
-then run the app by `npm start`
-the app should start running and you should be good to go
-```
+Make sure to clone this repo in the directory of your choosing
+
+`git clone https://github.com/bshin9/React_Ecom.git`
+
+In the terminal, run this code in order to download all the node modules needed
+
+`$ npm install`
+
+Then start the app
+
+`$ npm start`
+
+Make sure to include your own `.env` file in the root of the directory
 
 ## Contributing
 
@@ -25,7 +33,7 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 Please make sure to update tests as appropriate.
 
 ## Author
-This was created by Brian Shin
+This was created by Brian Shin.
 
 ## License
 [MIT](http://www.tldrlegal.com/license/mit-license)

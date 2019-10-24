@@ -103,24 +103,6 @@ class Contact extends React.Component {
     }
   };
 
-  // createContact = () => {
-  //   // Used axios to call the api endpoint and then just retrieved the data from above to create a new contact
-  //   axios.post('http://localhost:8000/api/newcontact', {
-  //     // payload
-  //      firstname:this.state.firstname,
-  //      lastname:this.state.lastname,
-  //      email:this.state.email,
-  //      user_name:this.state.user_name,
-  //      message:this.state.message
-  //   })
-  //   .then(res => {
-  //     console.log("Passing");
-  //   })
-  //   .catch(err => {
-  //     console.log(err);
-  //   });
-  // }
-  
   render() {
     return (
       <div className="Contact">

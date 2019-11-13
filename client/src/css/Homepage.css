@@ -1,0 +1,101 @@
+.body {
+  height: 100%;
+}
+
+#page-header {
+  height: 100%;
+  background: url("/img/watch.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: 1px #eee solid;
+  padding: 300px 0;
+  filter: brightness(0.7);
+}
+
+#info {
+    margin-top: 5rem;
+}
+
+*/ a span {
+  height: 1px;
+  width: 1px;
+  position: absolute;
+  overflow: hidden;
+  top: -10px;
+}
+
+/* Slider CSS */
+.watchSlide {
+  height: 350px;
+  width: 350px;
+  object-fit: contain;
+}
+
+#slider {
+  color: #000;
+}
+
+.fa-star {
+  color: gold;
+}
+
+/* Who */
+
+#who {
+  padding: 15rem 0;
+  background-color: #f6f6f6;
+}
+
+#who .btn-who {
+  background-color: #40c575;
+  color: #fff;
+  width: 50%;
+}
+
+#who .btn-who:hover {
+  background-color: transparent;
+  border: 1px solid #ff7900;
+  color: #ff7900;
+}
+
+.img-fluid {
+    width: 100%;
+    height: 100%;
+}
+
+.alignTxt {
+  text-align: center;
+}
+
+/* Why */
+
+#why {
+  padding: 15rem 0;
+  background-color: white;
+}
+
+#why .fa {
+  color: #40c575;
+  padding: 15px 0;
+}
+
+/* Customers */
+
+#customers {
+  padding: 5rem 0;
+  background-color: white;
+}
+
+#customers .carousel-indicators li {
+  background-color: #40c575;
+}
+
+#customers .carousel-inner {
+  margin-bottom: 50px;
+}
+
+#customers .carousel-indicators {
+  margin-bottom: -50px;
+}

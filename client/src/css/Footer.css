@@ -1,0 +1,16 @@
+footer {
+  background-color: blanchedalmond;
+}
+
+footer a {
+  filter: brightness(0.8);
+  color: #40c575;
+}
+
+footer a:hover {
+  color: #FF7900;
+}
+
+footer .fa {
+  padding: 0 3px;
+}

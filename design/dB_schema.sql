@@ -1,16 +1,16 @@
-DROP DATABASE IF EXISTS dB_schema;
 
 CREATE DATABASE dB_schema;
 USE dB_schema;
 
 CREATE TABLE Products (
-    product_name VARCHAR(255),
-    category VARCHAR(255),
-    product_description VARCHAR(255),
-    image VARCHAR(255),
-	product_id INT NOT NULL PRIMARY KEY AUTO_INCREMENT
+	Id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    ProductName VARCHAR(255),
+    Category VARCHAR(255),
+    ProductDescription VARCHAR(255),
+    Images VARCHAR(255)
 );
-INSERT INTO Products (product_name, category, product_description, image)
+
+INSERT INTO Products (ProductName, Category, ProductDescription, Images)
 	VALUES
 	('Tissot', 'Leather', 'Made with care and genuine leather. It is mechanically powered and holds up to 80 hours of energy.', 'img/tissot.png'),
 	('G-Shock', 'Rubber', 'Great watch for outdoor activity, but still classy enough to integrate with your nice outfits. Made with resin band and is 100 meters water resistant.', 'img/gshock.png'),
@@ -23,13 +23,13 @@ INSERT INTO Products (product_name, category, product_description, image)
 	('MVMT', 'Leather', 'Glass case made of hardened mineral crystal for enhanced durability.', 'img/mvmt.jpg'),
 	('Seiko', 'Rubber', 'Made with rose gold plating. Chronograph and uses japanese quartz movement.', 'img/seiko.jpg'),
 	('Tag Heuer', 'Steel', 'Stay classy with this Tag Heuer. Uses Swiss quartz movement and dial is made of sapphire.', 'img/tag.jpg'),
-	('Rolex', 'Gold', 'One of Conor McGregor\'s favorites. Classic stainless steel 18k gold. Uses automatic movement.', 'img/greenrolex.webp')
+	('Rolex', 'Gold', 'One of Conor McGregor\`s favorites. Classic stainless steel 18k gold. Uses automatic movement.', 'img/greenrolex.webp')
     ;
     
 CREATE TABLE Prices (
 	price_id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
     price INT,
-    FOREIGN KEY (price_id) REFERENCES Products(product_id)
+    FOREIGN KEY (price_id) REFERENCES Products(Id)
 );
 INSERT INTO Prices (price)
 	VALUES

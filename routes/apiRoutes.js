@@ -1,4 +1,3 @@
-require("dotenv").config();
 var path = require('path');
 const router = require("express").Router();
 const mysql = require("mysql");
@@ -34,7 +33,7 @@ router.get("/", (req, res) => {
 // get products
 router.get("/products", (req, res) => {
   let sql =
-    "SELECT Products.*, Prices.price FROM Products INNER JOIN Prices ON Products.product_id = Prices.price_id GROUP BY product_id;";
+    "SELECT Products.*, Prices.price FROM Products INNER JOIN Prices ON Products.Id = Prices.price_id GROUP BY Id;";
 
   connection.query(sql, function(err, result) {
     if (err) {
@@ -57,7 +56,7 @@ router.get("/productfilter/:category", (req, res) => {
   // let sql equals the mysql query which retrieves information from mysql database
   // the ? marks here indicate the var category I set above so I will be protected from sql injections
   let sql =
-    "SELECT Products.*, Prices.price FROM Products INNER JOIN Prices ON Products.product_id = Prices.price_id WHERE category = ?;";
+    "SELECT Products.*, Prices.price FROM Products INNER JOIN Prices ON Products.Id = Prices.price_id WHERE Category = ?;";
   // passing in the sql and category through the connection.query 
   connection.query(sql, [category], function(err, result) {
     // if there is no response, it will return a 500 error which means it is an internal server problem
@@ -79,7 +78,7 @@ router.get("/pricefilter/:low/:high", (req, res) => {
   var low = req.params.low;
   var high = req.params.high;
   let sql =
-    "SELECT Products.*, Prices.price FROM Products INNER JOIN Prices ON Products.product_id = Prices.price_id WHERE Prices.price < ? AND Prices.price > ?;";
+    "SELECT Products.*, Prices.price FROM Products INNER JOIN Prices ON Products.Id = Prices.price_id WHERE Prices.price < ? AND Prices.price > ?;";
   connection.query(sql, [high, low], function(err, result) {
     if (err) {
       res.send(500);

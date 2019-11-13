@@ -1,36 +1,54 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import "../Homepage.css";
 
-// created Home class 
+// created Home class
 class Home extends React.Component {
-
   render() {
     return (
       <div className="App">
         {/* HEADER */}
-        <section id="header">
-        {/* had to create anchor tag with name of header so react router could find it */}
-        <a href="#a" name="header"><span>h</span></a>
-          <div className="container text-center">
+        <header id="page-header">
+          <div className="container">
             <div className="row">
-              <div className="col-md-6 header-right hidden-sm-down">
-                <h2 className="properHeader">WELCOME TO PROPER WATCH!</h2>
-                <p className="lead">
+              <div className="col-md-6 m-auto text-center">
+              </div>
+            </div>
+          </div>
+        </header>
+
+        {/* INFO SECTION */}
+        <section id="info" className="py-3">
+          <div className="container">
+            <div className="row">
+              <div className="col-md-6 align-self-center">
+                <h3>WELCOME TO PROPER WATCH!</h3>
+                <p>
                   Proper Watch is where you can find a variety of classy and
                   stylistic watches ranging from all different price ranges. We
                   will make sure that you get all the information you need to
-                  make an informed decision before you buy anything. Sign up
-                  today to get free emails from us that will update your
-                  catalogue as newer watches are released!
-                </p> 
-                <NavLink to="/products" className="btn btn-outline-info btn-block" id="btn">
-                Check Out Our Watches!
-              </NavLink>
+                  make an informed decision before you buy anything. We pride
+                  ourselves in knowing that we prioritize quality over quantity.
+                  The button below will take you to our products page!
+                </p>
+                <NavLink
+                  to="/products"
+                  className="btn btn-outline-info btn-block"
+                  id="btn"
+                >
+                  Check Out Our Watches!
+                </NavLink>
+              </div>
+              <div className="col-md-6">
+                <img
+                  src="img/gorilla.jpeg"
+                  className="img-fluid pic"
+                  alt="proper"
+                />
               </div>
             </div>
           </div>
         </section>
+
         {/* Product Slide */}
         <section id="customers">
           <div className="container text-center">
@@ -46,7 +64,8 @@ class Home extends React.Component {
                 <div
                   id="quotes"
                   className="carousel slide"
-                  data-ride="carousel" >
+                  data-ride="carousel"
+                >
                   <ol className="carousel-indicators">
                     <li
                       data-target="#quotes"
@@ -64,9 +83,9 @@ class Home extends React.Component {
                           className="watchSlide"
                           alt="rolex"
                         />
-                        <footer className="blockquote-footer" id="slider">
+                        <div className="blockquote-footer" id="slider">
                           Conor McGregor loves this edition of the rolex
-                        </footer>
+                        </div>
                         <p>
                           <i className="fa fa-star" aria-hidden="true" />
                           <i className="fa fa-star" aria-hidden="true" />
@@ -86,9 +105,9 @@ class Home extends React.Component {
                           className="watchSlide"
                           alt="rolex5k"
                         />
-                        <footer className="blockquote-footer" id="slider">
+                        <div className="blockquote-footer" id="slider">
                           Floyd Mayweather proudly wears this rolex
-                        </footer>
+                        </div>
                         <p>
                           <i className="fa fa-star" aria-hidden="true" />
                           <i className="fa fa-star" aria-hidden="true" />
@@ -107,9 +126,9 @@ class Home extends React.Component {
                           className="watchSlide"
                           alt="versace"
                         />
-                        <footer className="blockquote-footer" id="slider">
+                        <div className="blockquote-footer" id="slider">
                           Post Malone adores this collection of Versace
-                        </footer>
+                        </div>
                         <p>
                           <i className="fa fa-star" aria-hidden="true" />
                           <i className="fa fa-star" aria-hidden="true" />
@@ -129,7 +148,9 @@ class Home extends React.Component {
         </section>
         {/* Who we are */}
         <section id="who">
-            <a href name="who"><span>h</span></a>
+          <a href name="who">
+            <span>h</span>
+          </a>
           <div className="container">
             <div className="row">
               <div className="col-md-6">
@@ -158,31 +179,29 @@ class Home extends React.Component {
             </div>
           </div>
         </section>
-        {/* Why */}
-        <section id="why">
-        <a href name="why"><span>h</span></a>
-          <div className="container text-center">
+        {/* WHY  */}
+        <section id="home-icons" className="py-5">
+          <div className="container">
             <div className="row">
-              <div className="col-md-12 wow fadeIn">
-                <h2 className="alignTxt">Why Do We Do This?</h2>
-                <hr width="30%" />
-                <p />
-              </div>
-            </div>
-            <div className="row">
-              <div className="col">
-                <i className="fa fa-thumbs-o-up fa-3x" />
-                <h3 className="alignTxt">Authenticity</h3>
+              <div className="col-md-4 mb-4 text-center">
+              <i class="fas fa-chart-line fa-3x mb-2" />
+                <h3>Stocks</h3>
                 <p>
-                  We have one goal and it's to bring you the best quality of
-                  service we can provide. We were inspired by the long list of
-                  classic time pieces, but people tend to believe that something
-                  must be expensive to be considered a luxury. We wanted to
-                  change that perspective by showing you watches that are
-                  extremely stylish, but also affordable. We do have some
-                  watches that are very high end, but we also have a variety so
-                  you do not have to break your bank account trying to buy the
-                  most expensive watch.
+                  Our stocks are projected to continue north.
+                </p>
+              </div>
+              <div className="col-md-4 mb-4 text-center">
+              <i class="fas fa-money-bill fa-3x mb-2" />
+                <h3>Savings</h3>
+                <p>
+                  We want to provide you the best deals in the market so you get a fair price.
+                </p>
+              </div>
+              <div className="col-md-4 mb-4 text-center">
+              <i class="fas fa-crown fa-3x mb-2" />
+                <h3>Crowning Achievement</h3>
+                <p>
+                  Conor may be king, but in this case, we work for you.
                 </p>
               </div>
             </div>

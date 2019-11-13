@@ -1,0 +1,55 @@
+/* HEADER */
+
+#contactHeader {
+  height: 100%;
+  background: url("/img/conorsuit.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: 1px #eee solid;
+  padding: 300px 0;
+  filter: brightness(0.7);
+}
+
+/* .contact .img {
+  width: 80%;
+} */
+
+/* Contact */
+
+#contact {
+  background-color: #f6f6f6;
+  padding: 5rem 0;
+}
+
+#btn {
+  transition: all 0.3s ease-in-out;
+  background-color: #fff;
+  color: #40C575;
+  border-color: #40C575;
+}
+
+#btn:hover {
+  background-color: #40C575;
+  color: #fff;
+}
+
+.commentSection {
+  margin-top: 100px;
+  text-align: center;
+}
+
+#faq .card {
+  border: #444;
+}
+
+#faq a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#faq .card-body,
+#faq .card-header {
+  background: #333;
+}

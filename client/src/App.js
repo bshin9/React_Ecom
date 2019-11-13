@@ -5,8 +5,13 @@ import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import "./Productpage.css";
-import "bootstrap/dist/css/bootstrap.min.css";
+import "./css/Navbar.css";
+import "./css/Homepage.css";
+import "./css/Productpage.css";
+import "./css/Contactpage.css";
+import "./css/Footer.css";
+import "./css/Video.css";
+import "./css/EditComment.css";
 
 
 // Using the router to route the Home, Product, and Contact pages together

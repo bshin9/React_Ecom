@@ -1,5 +1,6 @@
 import React from "react";
 import Card from "../components/Card";
+import Video from '../components/Video';
 
 // Create a Product class
 class Product extends React.Component {
@@ -73,11 +74,7 @@ class Product extends React.Component {
     return (
       <div className="Product">
         {/* HEADER */}
-        <section id="header1">
-          <div className="container">
-            <div className="col-md-6 header-right hidden-sm-down"></div>
-          </div>
-        </section>
+        <Video />
         {/* Product Page */}
         <section id="products">
           <div className="container">
@@ -133,11 +130,11 @@ class Product extends React.Component {
               {this.state.products &&
                 this.state.products.map(product => (
                   <Card
-                    key={product.product_name}
-                    name={product.product_name}
+                    key={product.ProductName}
+                    name={product.ProductName}
                     price={product.price}
-                    description={product.product_description}
-                    image={product.image}
+                    description={product.ProductDescription}
+                    image={product.Image}
                     buy={product.buy}
                   />
                 ))}

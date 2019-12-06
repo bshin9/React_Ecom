@@ -1,4 +1,3 @@
-
 CREATE DATABASE dB_schema;
 USE dB_schema;
 
@@ -28,9 +27,8 @@ INSERT INTO Products (ProductName, Category, ProductDescription, Images)
     
 CREATE TABLE Prices (
 	price_id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
-    price INT,
-    FOREIGN KEY (price_id) REFERENCES Products(Id)
-);
+    price INT
+    );
 INSERT INTO Prices (price)
 	VALUES
     (225),
